@@ -16,9 +16,7 @@ const aes = require('aes-js');
 const crypto = require('crypto');
 const password = "banana";
 const salt = "salt";
-console.log(encode(password));
-console.log(encode(salt));
-var key = crypto.pbkdf2Sync(encode(password), encode(salt), 100, 16, 'sha512');
+var key = crypto.pbkdf2Sync(encode(password), encode(salt), 100, 16, 'sha256');
 console.log(key)
 app.use(express.static('public'));
 
