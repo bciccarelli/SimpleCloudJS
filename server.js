@@ -93,7 +93,7 @@ function bytesToHexString(bytes)
 }
 // listen for requests :)
 const listener = app.listen(3000, function() {
-    console.log('Listening to port:  ' + 3000);
+    console.log('Listening to Port:  ' + 3000);
 });
 function stringToUint(string) {
 
